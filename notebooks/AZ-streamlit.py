@@ -49,6 +49,7 @@ lon_lat_quality_df = load_dataframe(path= 'data/lon_lat_quality_df.csv')
 hospitals_total = load_dataframe(path= 'data/hospitals_total.csv')
 canton_hospitals_pop = load_dataframe(path='data/canton_hospitals_pop.csv')
 deliv_canton_2019_rooms = load_dataframe(path='data/deliv_canton_2019_rooms.csv')
+cantons_hospital_serv = load_dataframe(path='data/cantons_hospital_serv.csv')
 
 gs = load_jsonfile(path='data/georef-switzerland-kanton.geojson')
 
@@ -87,7 +88,6 @@ fig5 = px.scatter_mapbox(
             "hospital": "Hospital",
             "city": "City",
             "number_of_cases":"Number of cases"},
-    title="<b>Number of cases 2014-2019 per hospital</b>",
     color_continuous_scale="Viridis"
 )
 fig5.update_layout(margin={"r":0,"t":35,"l":0,"b":0},
@@ -115,9 +115,8 @@ table6 = lon_lat_quality_df2[lon_lat_quality_df2['canton_name'] == canton10]
 col12.table(table6)
 
 ######################################
-st.header("Exploring hospitals data in Switzerland (not title just trying)")
+st.header("Hospital distribution in Switzerland")
 
-st.subheader("cantons information")
 fig11 = px.choropleth_mapbox(canton_hospitals_pop, geojson=gs, color="Hospital numbers",
                            hover_data= ['Total', 'age 0-19', 'age 20-64', 'age 65+', 'Male', 'Female'],
                            locations="canton_name", featureidkey="properties.kan_name",
@@ -144,7 +143,7 @@ col4.table(table2)
 
 ##########################
 
-st.subheader("cantons Birth data")
+st.subheader("Birth rate distribution according to cantons in Switzerland")
 fig12 = px.choropleth_mapbox(deliv_canton_2019_rooms, geojson=gs, color="Number of deliveries",
                            hover_data= ['Number of cesarean sections', 'Number_of_operating_rooms', 'Number_of_delivery_rooms'],
                            locations="canton_name", featureidkey="properties.kan_name",
@@ -169,6 +168,23 @@ col7.table(table3)
 table4 = deliv_canton_2019_rooms[deliv_canton_2019_rooms['canton_name'] == canton4]
 col8.table(table4)
 
+
+################################################
+
+st.subheader("Most popular diseases according to canton")
+
+fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
+st.plotly_chart(fig4)
+
+################################################
+
+st.subheader("Number of cases according to disease group")
+
+fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
+st.plotly_chart(fig3)
+
+##############################################
+
 ########################
 st.subheader("hospitals services(trying)")
 
@@ -184,52 +200,27 @@ fig1.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 st.plotly_chart(fig1)
 
-#############################################3
+#############################################
 
-st.subheader("Hospitals Staff")
-
-servs = ['Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
-
-show_labels2 = st.radio(label='Choose type of Service you are looking for:', options= servs)
-
-fig2 = px.scatter_mapbox(hospitals_total_lonlat, lat='lat', lon='lng', color=show_labels2, hover_data=['canton_name', 'hospital', 'Hospital_type'],
-                          zoom=7.5, width=1600, height=600
-                        )
-fig2.update_layout(mapbox_style="open-street-map")
-fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-
-st.plotly_chart(fig2)
-
-################################################
-
-st.subheader("Number of cases according to disease group")
-
-fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
-st.plotly_chart(fig3)
-
-##############################################
-
-st.subheader("Most popular diseases according to canton")
-
-fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
-st.plotly_chart(fig4)
-
-################################################
-
-
-##################################
+# st.subheader("Hospitals Staff")
 #
-# st.subheader("Comparison between two cantons")
+# servs = ['Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
 #
-# fig6 = px.choropleth_mapbox(hospitals_total, geojson=gs, color="Hospital numbers",
-#                            hover_data= ['Total', 'age 0-19', 'age 20-64', 'age 65+', 'Male', 'Female'],
-#                            locations="canton_name", featureidkey="properties.kan_name",
-#                            center={"lat": 46.818, "lon": 8.2275}, #swiss longitude and latitude
-#                            mapbox_style="carto-positron", zoom=7, opacity=0.8, width=1500, height=750,
-#                            labels={"canton_name":"Canton",
-#                            "Hospital numbers":"Number of hospitals per canton"},
-#                            title="<b>Number of hospitals per Canton</b>",
-#                            color_continuous_scale="Viridis")
-# fig6.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, hoverlabel={"bgcolor":"white", "font_size":12, "font_family":"Sans"})
-# st.plotly_chart(fig6)
+# show_labels2 = st.radio(label='Choose type of Service you are looking for:', options= servs)
+#
+# fig2 = px.scatter_mapbox(hospitals_total_lonlat, lat='lat', lon='lng', color=show_labels2, hover_data=['canton_name', 'hospital', 'Hospital_type'],
+#                           zoom=7.5, width=1600, height=600
+#                         )
+# fig2.update_layout(mapbox_style="open-street-map")
+# fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+#
+# st.plotly_chart(fig2)
+
+st.subheader("All Hospital services across Switzerland")
+
+#TO DO select service and canton
+st.table(cantons_hospital_serv)
+
+
+
 

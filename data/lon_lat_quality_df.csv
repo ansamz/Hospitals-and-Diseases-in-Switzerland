@@ -1,0 +1,135 @@
+,lat,lng,population,population_proper,city,canton_name,hospital,number_of_cases
+0,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Geburtshaus Delphys,2418
+1,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Klinik Hirslanden AG,189222
+2,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Klinik Im Park,70258
+3,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Klinik Pyramide am See AG,8488
+4,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Limmatklinik AG,5004
+5,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Privatklinik Bethanien,25271
+6,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Schulthess Klinik,28797
+7,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Stadtspital Triemli,234004
+8,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Stadtspital Waid,57640
+9,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Universitäts-Kinderspital Zürich das Spital der Eleonorenstiftung,24800
+10,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Universitätsklinik Balgrist,17918
+11,47.3786,8.54,434008.0,434008.0,Zürich,Zürich,Universitätsspital Zürich,356599
+12,46.2,6.15,201818.0,201818.0,Geneva,Genève,Clinique Générale­Beaulieu,36184
+13,46.2,6.15,201818.0,201818.0,Geneva,Genève,Clinique de la Plaine,263
+14,46.2,6.15,201818.0,201818.0,Geneva,Genève,Clinique la Colline,13048
+15,46.2,6.15,201818.0,201818.0,Geneva,Genève,Les Hôpitaux Universitaires de Genève HUG,360584
+16,46.2,6.15,201818.0,201818.0,Geneva,Genève,Maison de naissance La Roseraie,1046
+17,47.5606,7.5906,177595.0,177595.0,Basel,Basel-stadt,Bethesda Spital AG,60119
+18,47.5606,7.5906,177595.0,177595.0,Basel,Basel-stadt,Geburtshaus Basel,42
+19,47.5606,7.5906,177595.0,177595.0,Basel,Basel-stadt,Matthea Geburtshaus,179
+20,47.5606,7.5906,177595.0,177595.0,Basel,Basel-stadt,Merian Iselin Klinik,19496
+21,47.5606,7.5906,177595.0,177595.0,Basel,Basel-stadt,St. Claraspital,78985
+22,47.5606,7.5906,177595.0,177595.0,Basel,Basel-stadt,Universitätsspital Basel,318065
+23,47.5606,7.5906,177595.0,177595.0,Basel,Basel-stadt,Universitäts­Kinderspital beider Basel (UKBB),11149
+24,46.5333,6.6333,138905.0,138905.0,Lausanne,Vaud,CHUV Centre Hospitalier Universitaire Vaudois,313080
+25,46.5333,6.6333,138905.0,138905.0,Lausanne,Vaud,Clinique de La Source,40804
+26,46.5333,6.6333,138905.0,138905.0,Lausanne,Vaud,Clinique de Montchoisi,2081
+27,46.5333,6.6333,138905.0,138905.0,Lausanne,Vaud,Hirslanden Lausanne SA,66691
+28,46.948,7.4474,133798.0,133798.0,Bern,Bern,Hirslanden Bern AG,158824
+29,46.948,7.4474,133798.0,133798.0,Bern,Bern,Insel Gruppe AG (nicht-universitär),121280
+30,46.948,7.4474,133798.0,133798.0,Bern,Bern,Insel Gruppe AG (universitär),419355
+31,46.948,7.4474,133798.0,133798.0,Bern,Bern,Lindenhofgruppe AG,206008
+32,46.948,7.4474,133798.0,133798.0,Bern,Bern,Stiftung Diaconis Palliative Care,1696
+33,47.4992,8.7267,109775.0,109775.0,Winterthur,Zürich,Eulachklinik AG,10
+34,47.4992,8.7267,109775.0,109775.0,Winterthur,Zürich,Kantonsspital Winterthur,185643
+35,47.4992,8.7267,109775.0,109775.0,Winterthur,Zürich,Privatklinik Lindberg,7742
+36,47.4233,9.3772,75833.0,75833.0,Sankt Gallen,St. Gallen,Geburtshaus St.Gallen GmbH,323
+37,47.4233,9.3772,75833.0,75833.0,Sankt Gallen,St. Gallen,Hirslanden Klinik Stephanshorn,57857
+38,47.4233,9.3772,75833.0,75833.0,Sankt Gallen,St. Gallen,Kantonsspital St. Gallen,272554
+39,47.4233,9.3772,75833.0,75833.0,Sankt Gallen,St. Gallen,Stiftung Ostschweizer Kinderspital,7441
+40,46.0103,8.9625,63185.0,63185.0,Lugano,Ticino,Cardiocentro Ticino (CCT),83120
+41,46.0103,8.9625,63185.0,63185.0,Lugano,Ticino,Clinica Luganese Moncucco SA,43793
+42,46.0103,8.9625,63185.0,63185.0,Lugano,Ticino,EOC Ente ospedaliero cantonale,232748
+43,47.1372,7.2472,54456.0,54456.0,Biel/Bienne,Bern,Hirslanden Klinik Linde AG,40271
+44,47.1372,7.2472,54456.0,54456.0,Biel/Bienne,Bern,Spitalzentrum Biel AG,87052
+45,46.759,7.63,43743.0,43743.0,Thun,Bern,Klinik Hohmad AG,5102
+46,46.759,7.63,43743.0,43743.0,Thun,Bern,Spital STS AG,99727
+47,47.0996,6.8296,38965.0,38965.0,La Chaux-de-Fonds,Neuchâtel,Clinique Volta SA,112
+48,47.0996,6.8296,38965.0,38965.0,La Chaux-de-Fonds,Neuchâtel,Réseau hospitalier neuchâtelois RHNe,118077
+49,47.0996,6.8296,38965.0,38965.0,La Chaux-de-Fonds,Neuchâtel,SMN,80773
+50,46.8,7.15,38365.0,38365.0,Fribourg,Fribourg,HFR,142840
+51,46.8,7.15,38365.0,38365.0,Fribourg,Fribourg,Hôpital Jules Daler,56008
+52,47.6965,8.6339,36587.0,36587.0,Schaffhausen,Schaffhausen,Hirslanden Klinik Belair,6352
+53,47.6965,8.6339,36587.0,36587.0,Schaffhausen,Schaffhausen,Spitäler Schaffhausen,59740
+54,46.8521,9.5297,35038.0,35038.0,Chur,Graubünden,Kantonsspital Graubünden,129449
+55,46.2304,7.3661,34708.0,34708.0,Sion,Valais,Hôpital du Valais Centre hospitalier du Valais Romand CHVR,179899
+56,47.3492,8.7192,34442.0,34442.0,Uster,Zürich,Spital Uster,61668
+57,46.9903,6.9306,33475.0,33475.0,Neuchâtel,Neuchâtel,Maison de Naissance Tilia Sàrl,478
+58,46.7785,6.6408,30157.0,30157.0,Yverdon-les-Bains,Vaud,Etablissements Hospitaliers du Nord Vaudois (eHnv),73001
+59,47.2286,8.8317,26989.0,26989.0,Rapperswil-Jona,St. Gallen,Rosenklinik AG,1470
+60,46.4333,6.9167,25984.0,25984.0,Montreux,Vaud,Hôpital Riviera­Chablais Vaud-Valais,118931
+61,47.1956,8.5264,24322.0,24322.0,Baar,Zug,Zuger Kantonsspital AG,58220
+62,46.2322,6.0791,24144.0,24144.0,Meyrin,Genève,Hôpital de la Tour,52997
+63,47.4664,9.0497,23768.0,23768.0,Wil,St. Gallen,Spitalregion Fürstenland Toggenburg,45978
+64,47.6058,8.5075,1425.0,1425.0,Wil,St. Gallen,Spitalregion Fürstenland Toggenburg,45978
+65,47.2608,8.5975,22662.0,22662.0,Horgen,Zürich,See­Spital,60931
+66,46.1817,6.1404,22336.0,22336.0,Carouge,Genève,Clinique de Carouge,1198
+67,47.558,8.8964,21979.0,21979.0,Frauenfeld,Thurgau,Spital Thurgau AG Kantonsspitäler Frauenfeld & Münsterlingen,161094
+68,47.6458,9.1783,21801.0,21801.0,Kreuzlingen,Thurgau,Herz­Neuro­Zentrum Bodensee AG,44608
+69,47.6458,9.1783,21801.0,21801.0,Kreuzlingen,Thurgau,Klinik Seeschau AG,10109
+70,47.6458,9.1783,21801.0,21801.0,Kreuzlingen,Thurgau,Venenklinik Bellevue AG,102
+71,47.3923,8.0446,21268.0,21268.0,Aarau,Aargau,Hirslanden Klinik Aarau,97463
+72,47.3923,8.0446,21268.0,21268.0,Aarau,Aargau,Kantonsspital Aarau AG,213282
+73,46.382,6.2389,20272.0,20272.0,Nyon,Vaud,Groupement Hospitalier de lOuest Lémanique (GHOL) SA,51012
+74,47.5189,8.5422,20046.0,20046.0,Bülach,Zürich,Spital Bülach AG,66792
+75,47.5189,8.5422,20046.0,20046.0,Bülach,Zürich,Uroviva Klinik AG,10197
+76,47.4729,8.308,19122.0,19122.0,Baden,Aargau,Kantonsspital Baden AG,138032
+77,47.3989,8.4497,18666.0,18666.0,Schlieren,Zürich,Spital Limmattal,68236
+78,47.5228,7.6452,17805.0,17805.0,Muttenz,Basel-Landschaft,Praxisklinik Rennbahn AG,443
+79,46.9553,7.4833,17546.0,17546.0,Ostermundigen,Bern,Geburtshaus Luna AG,2207
+80,47.2081,7.5375,16777.0,16777.0,Solothurn,Solothurn,Solothurner Spitäler AG,194545
+81,47.5185,7.6928,16621.0,16621.0,Pratteln,Basel-Landschaft,Geburtshaus Tagmond GmbH,429
+82,47.0567,7.6264,16280.0,16280.0,Burgdorf,Bern,Regionalspital Emmental AG,56577
+83,46.1664,8.7997,16012.0,16012.0,Locarno,Ticino,Clinica Santa Chiara SA,20917
+84,46.5094,6.4986,15838.0,15838.0,Morges,Vaud,EHC Ensemble hospitalier de la Côte,76425
+85,47.3851,9.2786,15780.0,15780.0,Herisau,Appenzell Ausserrhoden,Spitalverbund Appenzell Ausserrhoden,45447
+86,47.2153,7.7889,15639.0,15639.0,Langenthal,Bern,SRO AG,51705
+87,47.1278,8.7431,15550.0,15550.0,Einsiedeln,Schwyz,Spital Einsiedeln,17329
+88,47.4839,7.735,14390.0,14390.0,Liestal,Basel-Landschaft,Kantonsspital Baselland,157142
+89,47.0211,8.6536,14177.0,14177.0,Schwyz,Schwyz,Spital Schwyz,33608
+90,47.2081,8.7058,13407.0,13407.0,Richterswil,Zürich,Paracelsus­Spital Richterswil AG,14793
+91,47.5539,7.7958,13337.0,13337.0,Rheinfelden,Aargau,Gesundheitszentrum Fricktal,44774
+92,46.9319,7.4872,13058.0,13058.0,Muri,Aargau,Stiftung Spital Muri,40830
+93,47.2747,8.3417,7810.0,7810.0,Muri,Aargau,Stiftung Spital Muri,40830
+94,47.3422,8.5783,13008.0,13008.0,Zollikon,Zürich,Klinik Tiefenbrunnen AG,255
+95,47.3653,7.3472,12682.0,12682.0,Delémont,Jura,Hôpital du Jura,47722
+96,46.1833,6.1833,12215.0,12215.0,Chêne-Bougeries,Genève,Clinique des Grangettes SA,44074
+97,47.5186,7.6174,12096.0,12096.0,Münchenstein,Basel-Landschaft,Hirslanden Klinik Birshof,6076
+98,46.7833,7.1167,12092.0,12092.0,Villars-sur-Glâne,Fribourg,Maison de Naissance le Petit Prince,1417
+99,47.2817,8.4502,12080.0,12080.0,Affoltern am Albis,Zürich,Spital Affoltern,26464
+100,47.378,9.5488,11730.0,11730.0,Altstätten,St. Gallen,Spitalregion Rheintal Werdenberg Sarganserland,95132
+101,47.2884,7.9475,11655.0,11655.0,Zofingen,Aargau,Spital Zofingen AG,27789
+102,47.2553,8.6917,10957.0,10957.0,Männedorf,Zürich,Spital Männedorf AG,48496
+103,46.8969,8.2469,10368.0,10368.0,Sarnen,Obwalden,Kantonsspital Obwalden,17239
+104,46.8167,6.9333,9943.0,9943.0,Payerne,Vaud,Hôpital Intercantonal de la Broye (HIB),35013
+105,46.8806,8.6394,9401.0,9401.0,Altdorf,Uri,Kantonsspital Uri,22491
+106,47.4922,7.6203,9202.0,9202.0,Arlesheim,Basel-Landschaft,Hospiz im Park,460
+107,47.4922,7.6203,9202.0,9202.0,Arlesheim,Basel-Landschaft,Ita Wegman Geburtshaus,49
+108,47.4922,7.6203,9202.0,9202.0,Arlesheim,Basel-Landschaft,Klinik Arlesheim AG,7304
+109,47.1911,8.8567,8754.0,8754.0,Lachen,Schwyz,Spital Lachen,34360
+110,46.9594,8.3667,8393.0,8393.0,Stans,Nidwalden,Geburtshaus Stans,927
+111,46.9594,8.3667,8393.0,8393.0,Stans,Nidwalden,Kantonsspital Nidwalden,31060
+112,47.2803,7.3708,7378.0,7378.0,Moutier,Bern,Hôpital de Moutier SA,1637
+113,47.0464,8.3744,7238.0,7238.0,Meggen,Luzern,Hirslanden Klinik St. Anna AG Hirslanden Klinik Meggen,1738
+114,46.5831,7.6497,6921.0,6921.0,Frutigen,Bern,Spitäler Frutigen Meiringen Interlaken AG,53462
+115,47.2242,8.9839,6416.0,6416.0,Uznach,St. Gallen,Spital Linth,33028
+116,47.24,8.1917,6330.0,6330.0,Menziken,Aargau,Asana Spital Menziken AG,15263
+117,47.0333,9.0667,5996.0,5996.0,Glarus,Glarus,Kantonsspital Glarus,31518
+118,47.4836,8.4542,5940.0,5940.0,Dielsdorf,Zürich,Adus Medica AG,1436
+119,46.15,7.1667,5897.0,5897.0,Saxon,Valais,Clinique CIC Valais SA,5062
+120,47.3306,9.4086,5649.0,5649.0,Appenzell,Appenzell Innerrhoden,Kantonales Spital Appenzell,2546
+121,47.3369,8.8575,5026.0,5026.0,Bäretswil,Zürich,Geburtshaus Zürcher Oberland AG,3954
+122,47.1564,8.1158,4707.0,4707.0,Oberkirch,Luzern,Geburtshaus Terra Alta,3856
+123,46.797,10.2995,4591.0,4591.0,Scuol,Graubünden,Center da Sanda Engiadina Bassa Ospidal dEngiadina Bassa,4689
+124,47.4106,9.4433,4379.0,4379.0,Speicher,Appenzell Ausserrhoden,Berit Klinik AG,6368
+125,47.4411,9.5311,4161.0,4161.0,Heiden,Appenzell Ausserrhoden,Hirslanden Klinik Am Rosenberg AG,5298
+126,46.3333,10.0497,3516.0,3516.0,Poschiavo,Graubünden,Centro Sanitario Valposchiavo Ospedale San Sisto,2459
+127,46.6885,9.4328,3217.0,3217.0,Thusis,Graubünden,Spital Thusis,7851
+128,46.5497,7.3664,3020.0,3020.0,Zweisimmen,Bern,Genossenschaft Geburtshaus Simmental-Saaneland Maternité Alpine,407
+129,46.5336,9.8719,2924.0,2924.0,Samedan,Graubünden,Spital Oberengadin,11491
+130,47.4012,8.2153,2897.0,2897.0,Othmarsingen,Aargau,Geburtshus Storchenäscht AG,1944
+131,46.9664,9.6833,2679.0,2679.0,Schiers,Graubünden,Flury Stiftung Spital Schiers,11939
+132,47.5819,8.2194,2169.0,2169.0,Leuggern,Aargau,Asana Spital Leuggern AG,22792
+133,46.4333,6.2167,1937.0,1937.0,Genolier,Vaud,Clinique de Genolier,15677

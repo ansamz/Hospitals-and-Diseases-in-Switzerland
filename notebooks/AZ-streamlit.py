@@ -82,7 +82,7 @@ color_discrete_map = {'Cardiac diseases':'rgb(16,78,139)',
 ##########################
 
 
-st.subheader("Number of cases 2014-2019 per hospital")
+st.subheader("Number of patients 2014-2019 per hospital")
 
 fig5 = px.scatter_mapbox(
     lon_lat_quality_df,

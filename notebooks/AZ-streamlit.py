@@ -176,6 +176,24 @@ col8.table(table4)
 st.subheader("Most popular diseases according to canton")
 
 fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
+fig4.update_layout(
+    font_family="Courier New",
+    font_color="blue",
+    title_font_family="Times New Roman",
+    title_font_color="red",
+    legend_title_font_color="green"
+)
+fig4.update_layout(
+    xaxis_title="Canton Name",
+    yaxis_title="Number of cases in disease group between 2014 until 2019",
+    legend_title="Disease Group",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="RebeccaPurple"
+    )
+)
+fig4.update_xaxes(title_font_family="Arial")
 st.plotly_chart(fig4)
 
 ################################################
@@ -183,6 +201,24 @@ st.plotly_chart(fig4)
 st.subheader("Number of cases according to disease group")
 
 fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
+fig3.update_layout(
+    font_family="Courier New",
+    font_color="blue",
+    title_font_family="Times New Roman",
+    title_font_color="red",
+    legend_title_font_color="green"
+)
+fig3.update_layout(
+    xaxis_title="Canton Name",
+    yaxis_title="Number of cases in disease group between 2014 until 2019",
+    legend_title="Disease Group",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="RebeccaPurple"
+    )
+)
+fig3.update_xaxes(title_font_family="Arial")
 st.plotly_chart(fig3)
 
 ##############################################

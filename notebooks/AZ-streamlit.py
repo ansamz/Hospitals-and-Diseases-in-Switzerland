@@ -97,7 +97,7 @@ fig5 = px.scatter_mapbox(
     labels={"canton_name":"Canton",
             "hospital": "Hospital",
             "city": "City",
-            "number_of_cases":"Number of cases"},
+            "number_of_cases":"Number of patients"},
     color_continuous_scale="Viridis"
 )
 fig5.update_layout(margin={"r":0,"t":35,"l":0,"b":0},
@@ -160,7 +160,7 @@ fig12 = px.choropleth_mapbox(deliv_canton_2019_rooms, geojson=gs, color="Number 
                            center={"lat": 46.818, "lon": 8.2275}, #swiss longitude and latitude
                            mapbox_style="carto-positron", zoom=7, opacity=0.8, width=1500, height=750,
                            labels={"canton_name":"Canton",
-                           "Number of deliveries":"Number of deliveries per canton"},
+                           "Number of deliveries":"Number of births per canton"},
                            title="<b>Number of deliveries per Canton</b>",
                            color_continuous_scale="Viridis")
 fig12.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, hoverlabel={"bgcolor":"white", "font_size":12, "font_family":"Sans"})
@@ -203,6 +203,7 @@ fig4.update_layout(
     )
 )
 fig4.update_xaxes(title_font_family="Arial")
+fig4.update_xaxes(tickangle=50)
 st.plotly_chart(fig4)
 
 ################################################
@@ -229,6 +230,7 @@ fig3.update_layout(
     )
 )
 fig3.update_xaxes(title_font_family="Arial")
+fig3.update_xaxes(tickangle=50)
 st.plotly_chart(fig3)
 
 ##############################################

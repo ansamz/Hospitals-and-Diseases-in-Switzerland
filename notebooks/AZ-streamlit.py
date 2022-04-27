@@ -142,7 +142,7 @@ st.plotly_chart(fig4)
 
 ################################################
 
-st.subheader("Number of cases according to disease group")
+st.subheader("Number of patients according to disease group")
 
 fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group",
                     color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)

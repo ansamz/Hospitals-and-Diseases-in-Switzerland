@@ -68,6 +68,14 @@ servs1 = ['Operating Rooms', 'Delivery Rooms', 'MRI', 'CT', 'PET', 'Dialysis']
 servs = ['Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
 servs_all = ['Operating Rooms', 'Delivery Rooms', 'MRI', 'CT', 'PET', 'Dialysis', 'Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
 
+#colors
+
+color_discrete_map = {'Cardiac diseases':'rgb(16,78,139)',
+                          'Diseases of the abdominal organs':'rgb(154,50,205)',
+                          'Gynecology and obstetrics':'rgb(151,255,255)',
+                          'Diseases of the bones, joints, connective tissues':'rgb(55,165,172)'
+                          }
+
 ##########################
 #Graphs
 ##########################
@@ -173,9 +181,10 @@ col8.table(table4)
 
 ################################################
 
-st.subheader("Most popular diseases according to canton")
+st.subheader("Most represented disease groups according to canton")
 
-fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
+fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019",
+                    color="disease_group", color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
 fig4.update_layout(
     font_family="Courier New",
     font_color="blue",
@@ -185,7 +194,7 @@ fig4.update_layout(
 )
 fig4.update_layout(
     xaxis_title="Canton Name",
-    yaxis_title="Number of cases in disease group between 2014 until 2019",
+    yaxis_title="Number of patients in disease group 2014-2019",
     legend_title="Disease Group",
     font=dict(
         family="Courier New, monospace",
@@ -200,7 +209,8 @@ st.plotly_chart(fig4)
 
 st.subheader("Number of cases according to disease group")
 
-fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group", log_x=False, width=1500, height=1000)
+fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group",
+                    color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
 fig3.update_layout(
     font_family="Courier New",
     font_color="blue",
@@ -210,7 +220,7 @@ fig3.update_layout(
 )
 fig3.update_layout(
     xaxis_title="Canton Name",
-    yaxis_title="Number of cases in disease group between 2014 until 2019",
+    yaxis_title="Number of patients in disease group 2014-2019",
     legend_title="Disease Group",
     font=dict(
         family="Courier New, monospace",

@@ -114,6 +114,63 @@ fig5.update_layout(margin={"r":0,"t":35,"l":0,"b":0},
 
 st.plotly_chart(fig5)
 
+
+st.subheader("Most represented disease groups according to canton")
+
+fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019",
+                    color="disease_group", color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
+fig4.update_layout(
+    font_family="Courier New",
+    font_color="blue",
+    title_font_family="Times New Roman",
+    title_font_color="red",
+    legend_title_font_color="green"
+)
+fig4.update_layout(
+    xaxis_title="Canton Name",
+    yaxis_title="Number of patients in disease group 2014-2019",
+    legend_title="Disease Group",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="RebeccaPurple"
+    )
+)
+fig4.update_xaxes(title_font_family="Arial")
+fig4.update_xaxes(tickangle=50)
+st.plotly_chart(fig4)
+
+################################################
+
+st.subheader("Number of cases according to disease group")
+
+fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group",
+                    color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
+fig3.update_layout(
+    font_family="Courier New",
+    font_color="blue",
+    title_font_family="Times New Roman",
+    title_font_color="red",
+    legend_title_font_color="green"
+)
+fig3.update_layout(
+    xaxis_title="Canton Name",
+    yaxis_title="Number of patients in disease group 2014-2019",
+    legend_title="Disease Group",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="RebeccaPurple"
+    )
+)
+fig3.update_xaxes(title_font_family="Arial")
+fig3.update_xaxes(tickangle=50)
+st.plotly_chart(fig3)
+
+##############################################
+
+st.subheader("Number of patients per hospital")
+
 col9, col10= st.columns(2)
 canton9 = col9.selectbox("Choose a Canton for comparison", cantons_list)
 canton10 = col10.selectbox("Choose a Second Canton for comparison", cantons_list)
@@ -126,6 +183,7 @@ table6 = lon_lat_quality_df2[lon_lat_quality_df2['canton_name'] == canton10]
 col12.table(table6)
 
 ######################################
+
 st.header("Hospital distribution in Switzerland")
 
 fig11 = px.choropleth_mapbox(canton_hospitals_pop, geojson=gs, color="Hospital numbers",
@@ -182,59 +240,6 @@ col8.table(table4)
 
 ################################################
 
-st.subheader("Most represented disease groups according to canton")
-
-fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019",
-                    color="disease_group", color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
-fig4.update_layout(
-    font_family="Courier New",
-    font_color="blue",
-    title_font_family="Times New Roman",
-    title_font_color="red",
-    legend_title_font_color="green"
-)
-fig4.update_layout(
-    xaxis_title="Canton Name",
-    yaxis_title="Number of patients in disease group 2014-2019",
-    legend_title="Disease Group",
-    font=dict(
-        family="Courier New, monospace",
-        size=18,
-        color="RebeccaPurple"
-    )
-)
-fig4.update_xaxes(title_font_family="Arial")
-fig4.update_xaxes(tickangle=50)
-st.plotly_chart(fig4)
-
-################################################
-
-st.subheader("Number of cases according to disease group")
-
-fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group",
-                    color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
-fig3.update_layout(
-    font_family="Courier New",
-    font_color="blue",
-    title_font_family="Times New Roman",
-    title_font_color="red",
-    legend_title_font_color="green"
-)
-fig3.update_layout(
-    xaxis_title="Canton Name",
-    yaxis_title="Number of patients in disease group 2014-2019",
-    legend_title="Disease Group",
-    font=dict(
-        family="Courier New, monospace",
-        size=18,
-        color="RebeccaPurple"
-    )
-)
-fig3.update_xaxes(title_font_family="Arial")
-fig3.update_xaxes(tickangle=50)
-st.plotly_chart(fig3)
-
-##############################################
 
 ########################
 st.subheader("Hospitals Equipment")

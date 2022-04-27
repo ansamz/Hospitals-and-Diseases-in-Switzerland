@@ -64,7 +64,9 @@ cantons_list = ['Thurgau', 'Graubünden', 'Luzern', 'Bern', 'Valais',
                 'Glarus', 'Jura', 'Zug', 'Obwalden', 'Fribourg', 'Schwyz',
                 'Appenzell Ausserrhoden', 'Appenzell Innerrhoden', 'Nidwalden', 'Basel-Stadt']
 
-servs = ['Operating Rooms', 'Delivery Rooms', 'MRI', 'CT', 'PET', 'Dialysis']
+servs1 = ['Operating Rooms', 'Delivery Rooms', 'MRI', 'CT', 'PET', 'Dialysis']
+servs = ['Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
+servs_all = ['Operating Rooms', 'Delivery Rooms', 'MRI', 'CT', 'PET', 'Dialysis', 'Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
 
 ##########################
 #Graphs
@@ -186,10 +188,10 @@ st.plotly_chart(fig3)
 ##############################################
 
 ########################
-st.subheader("hospitals services(trying)")
+st.subheader("Hospitals Equipment")
 
 
-show_labels = st.radio(label='Choose type of Service you are looking for:', options= servs)
+show_labels = st.radio(label='Choose the type of equipment you are looking for:', options= servs1)
 
 
 fig1 = px.scatter_mapbox(hospitals_total_lonlat, lat='lat', lon='lng', color=show_labels, size=show_labels, hover_data=['canton_name', 'hospital', 'Hospital_type'],
@@ -218,8 +220,17 @@ st.plotly_chart(fig1)
 
 st.subheader("All Hospital services across Switzerland")
 
-#TO DO select service and canton
-st.table(cantons_hospital_serv)
+cols = cantons_hospital_serv.columns
+#canton_select = st.multiselect('Select the canton/s you are interested in:', cantons_list)
+service_select = st.multiselect('Select the services you are interested in:', cols)
+
+selection_table = cantons_hospital_serv[[service_select]]
+# selection_table2 = pd.DataFrame(columns=cols)
+# for i in canton_select:
+#     entry = selection_table.loc[selection_table['canton_name'] == i]
+#     selection_table2 = selection_table2.append( [entry] )
+
+st.table(selection_table)
 
 
 

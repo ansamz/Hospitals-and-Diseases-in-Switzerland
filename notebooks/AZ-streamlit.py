@@ -220,17 +220,25 @@ st.plotly_chart(fig1)
 
 st.subheader("All Hospital services across Switzerland")
 
-cols = cantons_hospital_serv.columns
-#canton_select = st.multiselect('Select the canton/s you are interested in:', cantons_list)
+cols = list(cantons_hospital_serv.columns)
+
 service_select = st.multiselect('Select the services you are interested in:', cols)
+canton_select = st.multiselect('Select the canton/s you are interested in:', cantons_list)
+service_select.append('canton_name')
 
-selection_table = cantons_hospital_serv[[service_select]]
-# selection_table2 = pd.DataFrame(columns=cols)
-# for i in canton_select:
-#     entry = selection_table.loc[selection_table['canton_name'] == i]
-#     selection_table2 = selection_table2.append( [entry] )
-
-st.table(selection_table)
+if service_select:
+    selection_table = cantons_hospital_serv[service_select]
+    cols2 = list(selection_table.columns)
+    if canton_select:
+        selection_table2 = pd.DataFrame(columns=cols2)
+        for i in canton_select:
+            entry = selection_table.loc[selection_table['canton_name'] == i]
+            selection_table2 = selection_table2.append([entry])
+        st.table(selection_table2)
+    else:
+        st.table(selection_table)
+else:
+    st.write("")
 
 
 

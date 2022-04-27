@@ -17,6 +17,7 @@ from copy import deepcopy
 import pycountry #conda install -c conda-forge pycountry
 from PIL import Image
 
+
 # Add title and header
 #page configuration
 st.set_page_config(page_title="Hospitals and Diseases analysis", # page title, displayed on the window/tab bar

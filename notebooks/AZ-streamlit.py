@@ -179,7 +179,6 @@ fig3.update_layout(legend=dict(
     x=0.635
 ))
 fig3.update_layout(legend = dict(bgcolor = 'rgba(0,0,0,0)'))
-st.plotly_chart(fig4)
 st.plotly_chart(fig3)
 
 ##############################################

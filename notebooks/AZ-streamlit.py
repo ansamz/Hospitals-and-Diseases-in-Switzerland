@@ -138,6 +138,13 @@ fig4.update_layout(
 )
 fig4.update_xaxes(title_font_family="Arial")
 fig4.update_xaxes(tickangle=50)
+fig4.update_layout(legend=dict(
+    yanchor="top",
+    y=0.99,
+    xanchor="left",
+    x=0.635
+))
+fig4.update_layout(legend = dict(bgcolor = 'rgba(0,0,0,0)'))
 st.plotly_chart(fig4)
 
 ################################################
@@ -165,6 +172,14 @@ fig3.update_layout(
 )
 fig3.update_xaxes(title_font_family="Arial")
 fig3.update_xaxes(tickangle=50)
+fig3.update_layout(legend=dict(
+    yanchor="top",
+    y=0.99,
+    xanchor="left",
+    x=0.635
+))
+fig3.update_layout(legend = dict(bgcolor = 'rgba(0,0,0,0)'))
+st.plotly_chart(fig4)
 st.plotly_chart(fig3)
 
 ##############################################

@@ -1,45 +1,27 @@
-# Project Name
-
-example image:
+# Streamlit App 
 
 
-![alternative text](reports/img/pic01.jpg)
 
-
-#### -- Project Status: [Active, On-Hold, Completed]
+#### -- Project Status: [Completed]
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project. Limit to a short paragraph, 3-6 Sentences)
+The purpose of this project is to make a streamlit app and visualize our results after processing medical data in Switzerlan.
+I will add another repository with the code for analyzing the data.
 
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact]
-* If you do not have a partner leave this section out
 
 ### Methods Used
-* Inferential Statistics
-* Machine Learning
+* Streamlit
 * Data Visualization
-* Predictive Modeling
-* etc.
 
 ### Technologies
-* R
 * Python
-* D3
-* PostGres, MySql
 * Pandas, jupyter
 * HTML
-* JavaScript
-* etc.
+* plotly
 
 ## Project Description
-(Provide more detailed overview of the project.
-Talk a bit about your data sources and what questions and hypothesis you are exploring.
-What specific data analysis/visualization and modelling work are you using to solve the
-problem? What blockers and challenges are you facing?
-Feel free to number or bullet point things here)
+We downloaded the data from the swiss federal agency and analyzed the number of patients according to regions as well as medical staff and equipment.
+The main goal was to figure out if medical equipment and specialist were available and enough for each region. 
 
 ## Getting Started
 
@@ -56,17 +38,9 @@ create another "setup.md" file and link to it here*
 
 5. Follow setup [instructions](Link to file)
 
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
 
 
 ## Contributing Members
 
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])**
-
-#### Other Members:
-
- - [Full Name](https://github.com/[github handle])
- - [Full Name](https://github.com/[github handle])
+ - [Zuzana Dostalova](https://github.com/zuzanadostalova)
+ - [Ansam Zedan](https://github.com/ansamz)

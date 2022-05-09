@@ -1,0 +1,27 @@
+canton_name,main_code,disease_group,number_of_cases_2014_2019,population,normalized_by_population
+Bern,A,Cardiac diseases,168902,133798,1.2623656556899205
+Zürich,A,Cardiac diseases,119576,434008,0.2755156586975355
+Basel-Stadt,A,Cardiac diseases,111792,177595,0.629477181226949
+Vaud,A,Cardiac diseases,82536,138905,0.5941902739282243
+St. Gallen,A,Cardiac diseases,79363,75833,1.0465496551633193
+Ticino,A,Cardiac diseases,78430,63185,1.2412756192134209
+Genève,A,Cardiac diseases,77693,201818,0.3849656621312271
+Luzern,A,Cardiac diseases,72441,81691,0.88676843226304
+Aargau,A,Cardiac diseases,60110,21268,2.8263118299793115
+Valais,A,Cardiac diseases,47148,34708,1.3584188083438977
+Fribourg,A,Cardiac diseases,42398,38365,1.105121855858204
+Solothurn,A,Cardiac diseases,40180,17140,2.3442240373395564
+Thurgau,A,Cardiac diseases,37906,21979,1.7246462532417308
+Basel-Landschaft,A,Cardiac diseases,35153,21150,1.662080378250591
+Graubünden,A,Cardiac diseases,34675,35038,0.9896398196244078
+Neuchâtel,I,"Diseases of the bones, joints, connective tissues",30798,38965,0.7904016424996791
+Zug,I,"Diseases of the bones, joints, connective tissues",8635,30542,0.28272542728046623
+Jura,A,Cardiac diseases,8305,12682,0.6548651632234663
+Schaffhausen,A,Cardiac diseases,7330,36587,0.20034438461748708
+Appenzell Ausserrhoden,I,"Diseases of the bones, joints, connective tissues",6047,15780,0.3832065906210393
+Schwyz,E,Diseases of the abdominal organs,5774,16269,0.3549081074436044
+Nidwalden,A,Cardiac diseases,5298,8393,0.6312403193137138
+Glarus,A,Cardiac diseases,4075,5996,0.6796197464976651
+Uri,I,"Diseases of the bones, joints, connective tissues",3981,9401,0.42346558876715246
+Obwalden,A,Cardiac diseases,3439,10368,0.3316936728395062
+Appenzell Innerrhoden,I,"Diseases of the bones, joints, connective tissues",739,5649,0.13081961409098955

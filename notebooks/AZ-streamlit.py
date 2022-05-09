@@ -51,6 +51,9 @@ hospitals_total = load_dataframe(path= 'data/hospitals_total.csv')
 canton_hospitals_pop = load_dataframe(path='data/canton_hospitals_pop.csv')
 deliv_canton_2019_rooms = load_dataframe(path='data/deliv_canton_2019_rooms.csv')
 cantons_hospital_serv = load_dataframe(path='data/cantons_hospital_serv.csv')
+lon_lat_quality_df2 = load_dataframe(path='data/lon_lat_quality_df2.csv')
+most_common_disease_canton = load_dataframe(path='data/most_common_disease_canton.csv')
+most_common_disease_canton_wo = load_dataframe(path='data/most_common_disease_canton_wo.csv')
 
 gs = load_jsonfile(path='data/georef-switzerland-kanton.geojson')
 
@@ -85,20 +88,22 @@ color_discrete_map = {'Cardiac diseases':'rgb(16,78,139)',
 st.subheader("Number of patients 2014-2019 per hospital")
 
 fig5 = px.scatter_mapbox(
-    lon_lat_quality_df,
-    color="number_of_cases",
-    size='number_of_cases',
+    lon_lat_quality_df2,
+    color="normalized_by_population",
+    size='normalized_by_population',
     lat='lat', lon='lng',
     center={"lat": 46.8, "lon": 8.3},
     hover_data=['hospital', 'number_of_cases', 'city', 'canton_name'],
     mapbox_style="open-street-map",
     zoom=6.3,
     opacity=0.8,
-    width=1600, height=600,
+    width=900,
+    height=500,
     labels={"canton_name":"Canton",
             "hospital": "Hospital",
             "city": "City",
-            "number_of_cases":"Number of patients"},
+            "number_of_cases":"Number of patients", 'normalized_by_population':'Number of patients normalized'},
+    title="<b>Number of patients 2014-2019 per hospital</b>",
     color_continuous_scale="Viridis"
 )
 fig5.update_layout(margin={"r":0,"t":35,"l":0,"b":0},
@@ -117,7 +122,7 @@ st.plotly_chart(fig5)
 
 st.subheader("Most represented disease groups according to canton")
 
-fig4 = px.histogram(most_pop_disease_canton, x="canton_name", y="number_of_cases_2014_2019",
+fig4 = px.histogram(most_common_disease_canton, x="canton_name", y="normalized_by_population",
                     color="disease_group", color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
 fig4.update_layout(
     font_family="Courier New",
@@ -151,7 +156,7 @@ st.plotly_chart(fig4)
 
 st.subheader("Number of patients according to disease group")
 
-fig3 = px.histogram(group_disease_cantons_wo_G, x="canton_name", y="number_of_cases_2014_2019", color="disease_group",
+fig3 = px.histogram(most_common_disease_canton_wo, x="canton_name", y="normalized_by_population", color="disease_group",
                     color_discrete_map=color_discrete_map, log_x=False, width=1800, height=1000)
 fig3.update_layout(
     font_family="Courier New",

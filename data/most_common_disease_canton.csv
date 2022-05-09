@@ -1,0 +1,27 @@
+canton_name,main_code,disease_group,number_of_cases_2014_2019,population,normalized_by_population
+Bern,A,Cardiac diseases,168902,133798,1.2623656556899205
+Zürich,A,Cardiac diseases,119576,434008,0.2755156586975355
+Basel-Stadt,A,Cardiac diseases,111792,177595,0.629477181226949
+Genève,G,Gynecology and obstetrics,87714,201818,0.43461931046784724
+Vaud,A,Cardiac diseases,82536,138905,0.5941902739282243
+Luzern,G,Gynecology and obstetrics,79503,81691,0.9732161437612467
+St. Gallen,A,Cardiac diseases,79363,75833,1.0465496551633193
+Ticino,A,Cardiac diseases,78430,63185,1.2412756192134209
+Aargau,A,Cardiac diseases,60110,21268,2.8263118299793115
+Thurgau,G,Gynecology and obstetrics,56286,21979,2.5608990399927203
+Valais,A,Cardiac diseases,47148,34708,1.3584188083438977
+Fribourg,A,Cardiac diseases,42398,38365,1.105121855858204
+Solothurn,A,Cardiac diseases,40180,17140,2.3442240373395564
+Basel-Landschaft,A,Cardiac diseases,35153,21150,1.662080378250591
+Neuchâtel,G,Gynecology and obstetrics,34713,38965,0.8908764275631977
+Graubünden,A,Cardiac diseases,34675,35038,0.9896398196244078
+Appenzell Ausserrhoden,G,Gynecology and obstetrics,23756,15780,1.5054499366286438
+Schaffhausen,G,Gynecology and obstetrics,21464,36587,0.5866564626780004
+Zug,G,Gynecology and obstetrics,21211,30542,0.6944862811865627
+Jura,G,Gynecology and obstetrics,12684,12682,1.0001577038322031
+Nidwalden,G,Gynecology and obstetrics,11428,8393,1.3616108661980222
+Schwyz,G,Gynecology and obstetrics,9881,16269,0.6073514045116479
+Glarus,G,Gynecology and obstetrics,8961,5996,1.494496330887258
+Uri,G,Gynecology and obstetrics,6495,9401,0.6908839485161153
+Obwalden,G,Gynecology and obstetrics,5654,10368,0.5453317901234568
+Appenzell Innerrhoden,I,"Diseases of the bones, joints, connective tissues",739,5649,0.13081961409098955

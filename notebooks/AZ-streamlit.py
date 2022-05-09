@@ -51,7 +51,7 @@ hospitals_total = load_dataframe(path= 'data/hospitals_total.csv')
 canton_hospitals_pop = load_dataframe(path='data/canton_hospitals_pop.csv')
 deliv_canton_2019_rooms = load_dataframe(path='data/deliv_canton_2019_rooms.csv')
 cantons_hospital_serv = load_dataframe(path='data/cantons_hospital_serv.csv')
-lon_lat_quality_df2 = load_dataframe(path='data/lon_lat_quality_df2.csv')
+lon_lat_quality_df_map = load_dataframe(path='data/lon_lat_quality_df2.csv')
 most_common_disease_canton = load_dataframe(path='data/most_common_disease_canton.csv')
 most_common_disease_canton_wo = load_dataframe(path='data/most_common_disease_canton_wo.csv')
 
@@ -88,7 +88,7 @@ color_discrete_map = {'Cardiac diseases':'rgb(16,78,139)',
 st.subheader("Number of patients 2014-2019 per hospital")
 
 fig5 = px.scatter_mapbox(
-    lon_lat_quality_df2,
+    lon_lat_quality_df_map,
     color="normalized_by_population",
     size='normalized_by_population',
     lat='lat', lon='lng',
@@ -102,7 +102,7 @@ fig5 = px.scatter_mapbox(
     labels={"canton_name":"Canton",
             "hospital": "Hospital",
             "city": "City",
-            "number_of_cases":"Number of patients", 'normalized_by_population':'Number of patients normalized'},
+            "number_of_cases":"Number of patients"},
     title="<b>Number of patients 2014-2019 per hospital</b>",
     color_continuous_scale="Viridis"
 )

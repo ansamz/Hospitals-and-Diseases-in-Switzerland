@@ -191,7 +191,7 @@ fig4.update_layout(
 )
 fig4.update_layout(
     xaxis_title="Canton Name",
-    yaxis_title="Number of patients in disease group 2014-2019",
+    yaxis_title="Rate of patients in disease group 2014-2019",
     legend_title="Disease Group",
     font=dict(
         family="Courier New, monospace",
@@ -225,7 +225,7 @@ fig3.update_layout(
 )
 fig3.update_layout(
     xaxis_title="Canton Name",
-    yaxis_title="Number of patients in disease group 2014-2019",
+    yaxis_title="Rate of patients in disease group 2014-2019",
     legend_title="Disease Group",
     font=dict(
         family="Courier New, monospace",

@@ -368,9 +368,18 @@ plt.plot(df_prediction['year'], df_prediction['casesch'], 'o')           # scatt
 for i in [2020, 2021, 2022, 2023, 2024, 2025]:
   pred = x + y*i
   plt.plot(i, pred, color='red', marker='o')   # regression line
-plt.xlabel('year')
-plt.ylabel('number of cases')
-plt.title('number of disease group infections')
+plt.xlabel('Year', fontsize= 20, color='purple')
+plt.ylabel('Number of cases', fontsize= 20, color='purple')
+plt.title('Number of disease group infections', fontsize= 25, color='purple')
+
+plt.rcParams.update({
+    "figure.facecolor":  (0.0, 0.0, 0.0, 0.0),
+    "axes.facecolor":    (0.0, 0.0, 0.0, 0.0),
+    "savefig.facecolor": (0.0, 0.0, 0.0, 0.0),
+})
+
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
 
 locator = matplotlib.ticker.MultipleLocator(2)
 plt.gca().xaxis.set_major_locator(locator)

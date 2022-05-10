@@ -15,7 +15,8 @@ from urllib.request import urlopen
 import json
 from copy import deepcopy
 import pycountry #conda install -c conda-forge pycountry
-from PIL import Image
+import statsmodels.api as sm
+import matplotlib.ticker
 
 
 # Add title and header
@@ -54,6 +55,8 @@ cantons_hospital_serv = load_dataframe(path='data/cantons_hospital_serv.csv')
 lon_lat_quality_df_map = load_dataframe(path='data/lon_lat_quality_df2.csv')
 most_common_disease_canton = load_dataframe(path='data/most_common_disease_canton.csv')
 most_common_disease_canton_wo = load_dataframe(path='data/most_common_disease_canton_wo.csv')
+disease_pop_cantn = load_dataframe(path='data/disease_pop_canton.csv')
+text_files_data = load_dataframe(path='data/text_files_data.csv')
 
 gs = load_jsonfile(path='data/georef-switzerland-kanton.geojson')
 
@@ -71,6 +74,20 @@ cantons_list = ['Thurgau', 'Graubünden', 'Luzern', 'Bern', 'Valais',
 servs1 = ['Operating Rooms', 'Delivery Rooms', 'MRI', 'CT', 'PET', 'Dialysis']
 servs = ['Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
 servs_all = ['Operating Rooms', 'Delivery Rooms', 'MRI', 'CT', 'PET', 'Dialysis', 'Physicians', 'Physicians in training', 'Nursing staff', 'Other medical personnel', 'Total staff']
+disease_group_lst = ['Cardiac diseases',
+                        'Diseases of the nervous system, cerebrovascular accident (stroke)',
+                        'Geriatric Medicine',
+                        'Lung diseases',
+                        'Diseases of the abdominal organs',
+                        'Vascular Diseases',
+                        'Gynecology and obstetrics',
+                        'Diseases of the urinary tract and male genitalia',
+                        'Diseases of the bones, joints, connective tissues',
+                        'Complex conditions',
+                        'Skin disorders',
+                        'Highly specialized medicine',
+                        'Palliative Medicine',
+                        ]
 
 #colors
 
@@ -79,6 +96,47 @@ color_discrete_map = {'Cardiac diseases':'rgb(16,78,139)',
                           'Gynecology and obstetrics':'rgb(151,255,255)',
                           'Diseases of the bones, joints, connective tissues':'rgb(55,165,172)'
                           }
+
+#####################
+##Text files fataframe processing
+####################
+text_files_data['year'] = text_files_data['year'].astype(int)
+
+urinary = text_files_data[text_files_data['disease_group'] == 'Diseases of the urinary tract and male genitalia']
+bone = text_files_data[text_files_data['disease_group'] == 'Diseases of the bones, joints, connective tissues']
+specialized_medicine = text_files_data[text_files_data['disease_group'] == 'Highly specialized medicine']
+cardiac = text_files_data[text_files_data['disease_group'] == 'cardiac']
+nervous = text_files_data[text_files_data['disease_group'] == 'Nervous system, cerebrovascular accident (stroke)']
+lung = text_files_data[text_files_data['disease_group'] == 'Lung diseases']
+gynecology = text_files_data[text_files_data['disease_group'] == 'Gynecology and obstetrics']
+abdominal = text_files_data[text_files_data['disease_group'] == 'Abdominal organs disease']
+vascular = text_files_data[text_files_data['disease_group'] == 'Vascular Diseases']
+skin = text_files_data[text_files_data['disease_group'] == 'Skin disorders']
+geriatric = text_files_data[text_files_data['disease_group'] == 'Geriatric Medicine']
+palliative = text_files_data[text_files_data['disease_group'] == 'Palliative Medicine']
+
+urinary_y = urinary.groupby(by='year').sum().reset_index()
+bone_y = bone.groupby(by='year').sum().reset_index()
+specialized_medicine_y = specialized_medicine.groupby(by='year').sum().reset_index()
+cardiac_y = cardiac.groupby(by='year').sum().reset_index()
+nervous_y = nervous.groupby(by='year').sum().reset_index()
+lung_y = lung.groupby(by='year').sum().reset_index()
+gynecology_y = gynecology.groupby(by='year').sum().reset_index()
+abdominal_y = abdominal.groupby(by='year').sum().reset_index()
+vascular_y = vascular.groupby(by='year').sum().reset_index()
+skin_y = skin.groupby(by='year').sum().reset_index()
+geriatric_y = geriatric.groupby(by='year').sum().reset_index()
+palliative_y = palliative.groupby(by='year').sum().reset_index()
+
+def linear_reg(df):
+    y = df['casesch']
+    X = sm.add_constant(df['year'])
+
+    linear_1 = sm.OLS(y, X).fit()
+
+    parm1, parm2 = linear_1.params
+
+    return parm1, parm2
 
 ##########################
 #Graphs
@@ -97,8 +155,8 @@ fig5 = px.scatter_mapbox(
     mapbox_style="open-street-map",
     zoom=6.3,
     opacity=0.8,
-    width=1800,
-    height=1000,
+    width=1500,
+    height=750,
     labels={"canton_name":"Canton",
             "hospital": "Hospital",
             "city": "City",
@@ -194,6 +252,7 @@ col9, col10= st.columns(2)
 canton9 = col9.selectbox("Choose a Canton for comparison", cantons_list)
 canton10 = col10.selectbox("Choose a Second Canton for comparison", cantons_list)
 
+lon_lat_quality_df2['normalized_by_population'] = lon_lat_quality_df2[['number_of_cases']].div(lon_lat_quality_df2.population, axis=0)
 col11, col12= st.columns(2)
 table5 = lon_lat_quality_df2[lon_lat_quality_df2['canton_name'] == canton9]
 col11.table(table5)
@@ -258,14 +317,77 @@ col8.table(table4)
 
 
 ################################################
+st.subheader("Disease distribution in cantons and forecasting future patients number")
 
+show_labels = st.radio(label='Choose disease group:', options=disease_group_lst)
+col13, col14 = st.columns(2)
+
+df13_canton = disease_pop_cantn[disease_pop_cantn['disease_group'] == show_labels]
+fig13 = px.choropleth_mapbox(df13_canton, geojson=gs, color="normalized_by_population",
+                           hover_data= ['canton_name', 'disease_group', 'number_of_cases_2014_2019', 'population', 'normalized_by_population'],
+                           locations="canton_name", featureidkey="properties.kan_name",
+                           center={"lat": 46.818, "lon": 8.2275}, #swiss longitude and latitude
+                           mapbox_style="carto-positron", zoom=7, opacity=0.8, width=950, height=750,
+                           labels={"canton_name":"Canton",
+                           "normalized_by_population":"Number of patients normalised"},
+                           title="<b>Normalised Number patients according to disease group</b>",
+                           color_continuous_scale="Viridis")
+fig13.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, hoverlabel={"bgcolor":"white", "font_size":12, "font_family":"Sans"})
+col13.plotly_chart(fig13)
+
+if show_labels == 'Cardiac diseases':
+    df_prediction = cardiac_y
+elif show_labels == 'Diseases of the nervous system, cerebrovascular accident (stroke)':
+    df_prediction = nervous_y
+elif show_labels == 'Geriatric Medicine':
+    df_prediction = geriatric_y
+elif show_labels == 'Lung diseases':
+    df_prediction = lung_y
+elif show_labels == 'Diseases of the abdominal organs':
+    df_prediction = abdominal_y
+elif show_labels == 'Vascular Diseases':
+    df_prediction = vascular_y
+elif show_labels == 'Gynecology and obstetrics':
+    df_prediction = gynecology_y
+elif show_labels == 'Diseases of the urinary tract and male genitalia':
+    df_prediction = urinary_y
+elif show_labels == 'Diseases of the bones, joints, connective tissues':
+    df_prediction = bone_y
+elif show_labels == 'Skin disorders':
+    df_prediction = skin_y
+elif show_labels == 'Palliative Medicine':
+    df_prediction = palliative_y
+else:
+    df_prediction = specialized_medicine_y
+
+x, y = linear_reg(df_prediction)
+
+fig14, ax = plt.subplots()
+fig14 = plt.figure(figsize=(18, 10))
+plt.plot(df_prediction['year'], df_prediction['casesch'], 'o')           # scatter plot showing actual data
+for i in [2020, 2021, 2022, 2023, 2024, 2025]:
+  pred = x + y*i
+  plt.plot(i, pred, color='red', marker='o')   # regression line
+plt.xlabel('year')
+plt.ylabel('number of cases')
+plt.title('number of disease group infections')
+
+locator = matplotlib.ticker.MultipleLocator(2)
+plt.gca().xaxis.set_major_locator(locator)
+formatter = matplotlib.ticker.StrMethodFormatter("{x:.0f}")
+plt.gca().xaxis.set_major_formatter(formatter)
+
+col14.write(" ")
+col14.write(" ")
+col14.write(" ")
+col14.write(" ")
+col14.write(" ")
+col14.pyplot(fig14)
 
 ########################
 st.subheader("Hospitals Equipment")
 
-
 show_labels = st.radio(label='Choose the type of equipment you are looking for:', options= servs1)
-
 
 fig1 = px.scatter_mapbox(hospitals_total_lonlat, lat='lat', lon='lng', color=show_labels, size=show_labels, hover_data=['canton_name', 'hospital', 'Hospital_type'],
                           zoom=7.5, width=1600, height=600

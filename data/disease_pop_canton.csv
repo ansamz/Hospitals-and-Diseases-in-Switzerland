@@ -1,0 +1,319 @@
+canton_name,main_code,disease_group,number_of_cases_2014_2019,population,normalized_by_population
+Aargau,A,Cardiac diseases,60110,21268,2.8263118299793115
+Aargau,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",30056,21268,1.41320293398533
+Aargau,C,Geriatric Medicine,6631,21268,0.31178296031596764
+Aargau,D,Lung diseases,13542,21268,0.636731239420726
+Aargau,E,Diseases of the abdominal organs,15259,21268,0.7174628549934173
+Aargau,F,Vascular Diseases,7657,21268,0.3600244498777506
+Aargau,G,Gynecology and obstetrics,45357,21268,2.132640586797066
+Aargau,H,Diseases of the urinary tract and male genitalia,9486,21268,0.44602219296595824
+Aargau,I,"Diseases of the bones, joints, connective tissues",16727,21268,0.7864867406432199
+Aargau,J,Complex conditions,15140,21268,0.7118675945081813
+Aargau,K,Skin disorders,470,21268,0.022098927966898628
+Aargau,L,Highly specialized medicine,560,21268,0.026330637577581344
+Aargau,M,Palliative Medicine,1365,21268,0.06418092909535453
+Appenzell Ausserrhoden,A,Cardiac diseases,4096,15780,0.25956907477820024
+Appenzell Ausserrhoden,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",1361,15780,0.08624841571609633
+Appenzell Ausserrhoden,C,Geriatric Medicine,212,15780,0.013434727503168568
+Appenzell Ausserrhoden,D,Lung diseases,4526,15780,0.28681875792141953
+Appenzell Ausserrhoden,E,Diseases of the abdominal organs,3599,15780,0.22807351077313054
+Appenzell Ausserrhoden,F,Vascular Diseases,331,15780,0.020975918884664133
+Appenzell Ausserrhoden,G,Gynecology and obstetrics,23756,15780,1.5054499366286438
+Appenzell Ausserrhoden,H,Diseases of the urinary tract and male genitalia,2554,15780,0.16185044359949302
+Appenzell Ausserrhoden,I,"Diseases of the bones, joints, connective tissues",6047,15780,0.3832065906210393
+Appenzell Ausserrhoden,J,Complex conditions,2545,15780,0.16128010139416984
+Appenzell Ausserrhoden,K,Skin disorders,53,15780,0.003358681875792142
+Appenzell Innerrhoden,A,Cardiac diseases,391,5649,0.06921579040538148
+Appenzell Innerrhoden,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",192,5649,0.033988316516197555
+Appenzell Innerrhoden,C,Geriatric Medicine,16,5649,0.0028323597096831295
+Appenzell Innerrhoden,D,Lung diseases,624,5649,0.11046202867764206
+Appenzell Innerrhoden,E,Diseases of the abdominal organs,331,5649,0.05859444149406975
+Appenzell Innerrhoden,F,Vascular Diseases,14,5649,0.0024783147459727386
+Appenzell Innerrhoden,G,Gynecology and obstetrics,15,5649,0.0026553372278279343
+Appenzell Innerrhoden,H,Diseases of the urinary tract and male genitalia,163,5649,0.028854664542396883
+Appenzell Innerrhoden,I,"Diseases of the bones, joints, connective tissues",739,5649,0.13081961409098955
+Appenzell Innerrhoden,J,Complex conditions,57,5649,0.01009028146574615
+Appenzell Innerrhoden,K,Skin disorders,4,5649,0.0007080899274207824
+Basel-Landschaft,A,Cardiac diseases,35153,21150,1.662080378250591
+Basel-Landschaft,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",9420,21150,0.4453900709219858
+Basel-Landschaft,C,Geriatric Medicine,14047,21150,0.664160756501182
+Basel-Landschaft,D,Lung diseases,21263,21150,1.0053427895981089
+Basel-Landschaft,E,Diseases of the abdominal organs,17180,21150,0.8122931442080378
+Basel-Landschaft,F,Vascular Diseases,5789,21150,0.27371158392434985
+Basel-Landschaft,G,Gynecology and obstetrics,19558,21150,0.9247281323877069
+Basel-Landschaft,H,Diseases of the urinary tract and male genitalia,10327,21150,0.488274231678487
+Basel-Landschaft,I,"Diseases of the bones, joints, connective tissues",13223,21150,0.6252009456264775
+Basel-Landschaft,J,Complex conditions,11012,21150,0.520661938534279
+Basel-Landschaft,K,Skin disorders,163,21150,0.007706855791962175
+Basel-Landschaft,L,Highly specialized medicine,3,21150,0.00014184397163120567
+Basel-Landschaft,M,Palliative Medicine,507,21150,0.02397163120567376
+Basel-Stadt,A,Cardiac diseases,111792,177595,0.629477181226949
+Basel-Stadt,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",35417,177595,0.1994256595061798
+Basel-Stadt,C,Geriatric Medicine,3292,177595,0.018536557898589486
+Basel-Stadt,D,Lung diseases,22635,177595,0.12745291252569046
+Basel-Stadt,E,Diseases of the abdominal organs,27043,177595,0.15227343112137165
+Basel-Stadt,F,Vascular Diseases,12144,177595,0.06838030349953546
+Basel-Stadt,G,Gynecology and obstetrics,61794,177595,0.3479489850502548
+Basel-Stadt,H,Diseases of the urinary tract and male genitalia,8718,177595,0.049089219854162564
+Basel-Stadt,I,"Diseases of the bones, joints, connective tissues",19602,177595,0.11037472901827192
+Basel-Stadt,J,Complex conditions,27028,177595,0.15218896928404516
+Basel-Stadt,K,Skin disorders,729,177595,0.004104845294067964
+Basel-Stadt,L,Highly specialized medicine,2518,177595,0.01417832709254202
+Basel-Stadt,M,Palliative Medicine,1119,177595,0.006300853064556997
+Bern,A,Cardiac diseases,168902,133798,1.2623656556899205
+Bern,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",52740,133798,0.39417629560979983
+Bern,C,Geriatric Medicine,16004,133798,0.11961314817859758
+Bern,D,Lung diseases,17701,133798,0.13229644688261408
+Bern,E,Diseases of the abdominal organs,22350,133798,0.16704285564806648
+Bern,F,Vascular Diseases,25911,133798,0.19365760325266446
+Bern,G,Gynecology and obstetrics,71986,133798,0.5380200002989581
+Bern,H,Diseases of the urinary tract and male genitalia,13646,133798,0.1019895663612311
+Bern,I,"Diseases of the bones, joints, connective tissues",38576,133798,0.28831522145323546
+Bern,J,Complex conditions,40272,133798,0.30099104620397915
+Bern,K,Skin disorders,2121,133798,0.015852254891702416
+Bern,L,Highly specialized medicine,3271,133798,0.024447301155473177
+Bern,M,Palliative Medicine,2199,133798,0.016435223246984258
+Fribourg,A,Cardiac diseases,42398,38365,1.105121855858204
+Fribourg,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",14431,38365,0.37615013684347715
+Fribourg,C,Geriatric Medicine,7958,38365,0.20742864590121204
+Fribourg,D,Lung diseases,20199,38365,0.526495503714323
+Fribourg,E,Diseases of the abdominal organs,9698,38365,0.25278248403492765
+Fribourg,F,Vascular Diseases,2874,38365,0.07491202919327512
+Fribourg,G,Gynecology and obstetrics,37844,38365,0.9864199139841001
+Fribourg,H,Diseases of the urinary tract and male genitalia,7996,38365,0.20841913202137366
+Fribourg,I,"Diseases of the bones, joints, connective tissues",11286,38365,0.29417437768799687
+Fribourg,J,Complex conditions,9894,38365,0.2578913071810244
+Fribourg,K,Skin disorders,200,38365,0.0052130848429558195
+Fribourg,M,Palliative Medicine,1048,38365,0.027316564577088493
+Genève,A,Cardiac diseases,77693,201818,0.3849656621312271
+Genève,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",41041,201818,0.2033564895103509
+Genève,C,Geriatric Medicine,6598,201818,0.032692822245785805
+Genève,D,Lung diseases,39905,201818,0.19772765561050054
+Genève,E,Diseases of the abdominal organs,25169,201818,0.1247113736138501
+Genève,F,Vascular Diseases,7652,201818,0.03791534947328781
+Genève,G,Gynecology and obstetrics,87714,201818,0.43461931046784724
+Genève,H,Diseases of the urinary tract and male genitalia,9346,201818,0.04630905072887453
+Genève,I,"Diseases of the bones, joints, connective tissues",25680,201818,0.127243357876899
+Genève,J,Complex conditions,32471,201818,0.1608924872905291
+Genève,K,Skin disorders,772,201818,0.0038252286713771812
+Genève,L,Highly specialized medicine,1913,201818,0.009478837368321953
+Genève,M,Palliative Medicine,4630,201818,0.022941462109425322
+Glarus,A,Cardiac diseases,4075,5996,0.6796197464976651
+Glarus,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",1898,5996,0.3165443629086057
+Glarus,C,Geriatric Medicine,2199,5996,0.36674449633088724
+Glarus,D,Lung diseases,2680,5996,0.4469646430953969
+Glarus,E,Diseases of the abdominal organs,3267,5996,0.544863242161441
+Glarus,F,Vascular Diseases,327,5996,0.054536357571714475
+Glarus,G,Gynecology and obstetrics,8961,5996,1.494496330887258
+Glarus,H,Diseases of the urinary tract and male genitalia,2000,5996,0.333555703802535
+Glarus,I,"Diseases of the bones, joints, connective tissues",3108,5996,0.5183455637091394
+Glarus,J,Complex conditions,2780,5996,0.46364242828552366
+Glarus,K,Skin disorders,28,5996,0.004669779853235491
+Glarus,M,Palliative Medicine,195,5996,0.032521681120747166
+Graubünden,A,Cardiac diseases,34675,35038,0.9896398196244078
+Graubünden,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",7774,35038,0.2218733946001484
+Graubünden,C,Geriatric Medicine,5069,35038,0.14467149951481248
+Graubünden,D,Lung diseases,8714,35038,0.24870140989782522
+Graubünden,E,Diseases of the abdominal organs,10611,35038,0.3028426280038815
+Graubünden,F,Vascular Diseases,5652,35038,0.16131057708773333
+Graubünden,G,Gynecology and obstetrics,27973,35038,0.7983617786403333
+Graubünden,H,Diseases of the urinary tract and male genitalia,8668,35038,0.24738854957474743
+Graubünden,I,"Diseases of the bones, joints, connective tissues",10380,35038,0.29624978594668644
+Graubünden,J,Complex conditions,6780,35038,0.1935041954449455
+Graubünden,K,Skin disorders,218,35038,0.006221816313716536
+Graubünden,M,Palliative Medicine,2935,35038,0.08376619670072492
+Jura,A,Cardiac diseases,8305,12682,0.6548651632234663
+Jura,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",4528,12682,0.3570414761078694
+Jura,C,Geriatric Medicine,1616,12682,0.127424696420123
+Jura,D,Lung diseases,5691,12682,0.4487462545339852
+Jura,E,Diseases of the abdominal organs,3195,12682,0.25193187194448824
+Jura,F,Vascular Diseases,202,12682,0.015928087052515374
+Jura,G,Gynecology and obstetrics,12684,12682,1.0001577038322031
+Jura,H,Diseases of the urinary tract and male genitalia,2345,12682,0.18490774325816117
+Jura,I,"Diseases of the bones, joints, connective tissues",4443,12682,0.3503390632392367
+Jura,J,Complex conditions,4526,12682,0.3568837722756663
+Jura,K,Skin disorders,165,12682,0.01301056615675761
+Jura,M,Palliative Medicine,22,12682,0.0017347421542343478
+Luzern,A,Cardiac diseases,72441,81691,0.88676843226304
+Luzern,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",24609,81691,0.3012449351825783
+Luzern,C,Geriatric Medicine,6006,81691,0.07352095090034398
+Luzern,D,Lung diseases,19225,81691,0.23533804213438445
+Luzern,E,Diseases of the abdominal organs,24566,81691,0.30071856140823344
+Luzern,F,Vascular Diseases,10579,81691,0.12950018973938376
+Luzern,G,Gynecology and obstetrics,79503,81691,0.9732161437612467
+Luzern,H,Diseases of the urinary tract and male genitalia,12295,81691,0.15050617571091063
+Luzern,I,"Diseases of the bones, joints, connective tissues",20139,81691,0.2465265451518527
+Luzern,J,Complex conditions,18451,81691,0.22586331419617828
+Luzern,K,Skin disorders,444,81691,0.00543511525137408
+Luzern,L,Highly specialized medicine,2,81691,2.4482501132315678e-05
+Luzern,M,Palliative Medicine,975,81691,0.011935219302003893
+Neuchâtel,A,Cardiac diseases,16893,38965,0.43354292313614784
+Neuchâtel,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",14339,38965,0.3679969203131015
+Neuchâtel,C,Geriatric Medicine,3785,38965,0.097138457590145
+Neuchâtel,D,Lung diseases,13971,38965,0.3585525471577056
+Neuchâtel,E,Diseases of the abdominal organs,11074,38965,0.28420377261645063
+Neuchâtel,F,Vascular Diseases,2373,38965,0.060900808417810856
+Neuchâtel,G,Gynecology and obstetrics,34713,38965,0.8908764275631977
+Neuchâtel,H,Diseases of the urinary tract and male genitalia,4564,38965,0.11713075837289876
+Neuchâtel,I,"Diseases of the bones, joints, connective tissues",30798,38965,0.7904016424996791
+Neuchâtel,J,Complex conditions,8799,38965,0.22581804183241372
+Neuchâtel,K,Skin disorders,172,38965,0.004414217887848069
+Neuchâtel,M,Palliative Medicine,510,38965,0.013088669318619274
+Nidwalden,A,Cardiac diseases,5298,8393,0.6312403193137138
+Nidwalden,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",1582,8393,0.1884904086738949
+Nidwalden,C,Geriatric Medicine,202,8393,0.024067675443822233
+Nidwalden,D,Lung diseases,2240,8393,0.26688907422852376
+Nidwalden,E,Diseases of the abdominal organs,4892,8393,0.5828666746097939
+Nidwalden,F,Vascular Diseases,87,8393,0.010365781007982843
+Nidwalden,G,Gynecology and obstetrics,11428,8393,1.3616108661980222
+Nidwalden,H,Diseases of the urinary tract and male genitalia,1148,8393,0.13678065054211844
+Nidwalden,I,"Diseases of the bones, joints, connective tissues",2552,8393,0.3040629095674967
+Nidwalden,J,Complex conditions,1578,8393,0.18801382104134398
+Nidwalden,K,Skin disorders,53,8393,0.006314786131299893
+Obwalden,A,Cardiac diseases,3439,10368,0.3316936728395062
+Obwalden,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",1060,10368,0.10223765432098765
+Obwalden,C,Geriatric Medicine,123,10368,0.011863425925925927
+Obwalden,D,Lung diseases,1598,10368,0.1541280864197531
+Obwalden,E,Diseases of the abdominal organs,1614,10368,0.1556712962962963
+Obwalden,F,Vascular Diseases,43,10368,0.004147376543209877
+Obwalden,G,Gynecology and obstetrics,5654,10368,0.5453317901234568
+Obwalden,H,Diseases of the urinary tract and male genitalia,535,10368,0.05160108024691358
+Obwalden,I,"Diseases of the bones, joints, connective tissues",2079,10368,0.20052083333333334
+Obwalden,J,Complex conditions,1073,10368,0.10349151234567901
+Obwalden,K,Skin disorders,21,10368,0.002025462962962963
+Schaffhausen,A,Cardiac diseases,7330,36587,0.20034438461748708
+Schaffhausen,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",4628,36587,0.1264930166452565
+Schaffhausen,C,Geriatric Medicine,1363,36587,0.03725366933610299
+Schaffhausen,D,Lung diseases,5926,36587,0.16197009866892612
+Schaffhausen,E,Diseases of the abdominal organs,6712,36587,0.1834531390931205
+Schaffhausen,F,Vascular Diseases,886,36587,0.02421625167409189
+Schaffhausen,G,Gynecology and obstetrics,21464,36587,0.5866564626780004
+Schaffhausen,H,Diseases of the urinary tract and male genitalia,2628,36587,0.07182879164730642
+Schaffhausen,I,"Diseases of the bones, joints, connective tissues",4627,36587,0.12646568453275753
+Schaffhausen,J,Complex conditions,4122,36587,0.11266296772077514
+Schaffhausen,K,Skin disorders,54,36587,0.0014759340749446524
+Schwyz,A,Cardiac diseases,4762,16269,0.29270391542196816
+Schwyz,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",1986,16269,0.12207265351281578
+Schwyz,C,Geriatric Medicine,648,16269,0.039830352203577356
+Schwyz,D,Lung diseases,3666,16269,0.2253365295961645
+Schwyz,E,Diseases of the abdominal organs,5774,16269,0.3549081074436044
+Schwyz,F,Vascular Diseases,1334,16269,0.08199643493761141
+Schwyz,G,Gynecology and obstetrics,9881,16269,0.6073514045116479
+Schwyz,H,Diseases of the urinary tract and male genitalia,3169,16269,0.19478763292150716
+Schwyz,I,"Diseases of the bones, joints, connective tissues",4410,16269,0.27106767471879034
+Schwyz,J,Complex conditions,2565,16269,0.15766181080582703
+Schwyz,K,Skin disorders,63,16269,0.0038723953531255764
+Schwyz,M,Palliative Medicine,799,16269,0.04911180773249739
+Solothurn,A,Cardiac diseases,40180,17140,2.3442240373395564
+Solothurn,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",13154,17140,0.7674445740956826
+Solothurn,C,Geriatric Medicine,12853,17140,0.7498833138856477
+Solothurn,D,Lung diseases,17977,17140,1.048833138856476
+Solothurn,E,Diseases of the abdominal organs,18307,17140,1.0680863477246207
+Solothurn,F,Vascular Diseases,3123,17140,0.1822053675612602
+Solothurn,G,Gynecology and obstetrics,37687,17140,2.1987747957993
+Solothurn,H,Diseases of the urinary tract and male genitalia,9928,17140,0.5792298716452742
+Solothurn,I,"Diseases of the bones, joints, connective tissues",19068,17140,1.112485414235706
+Solothurn,J,Complex conditions,20792,17140,1.213068844807468
+Solothurn,K,Skin disorders,271,17140,0.015810968494749125
+Solothurn,L,Highly specialized medicine,4,17140,0.00023337222870478414
+Solothurn,M,Palliative Medicine,1201,17140,0.07007001166861143
+St. Gallen,A,Cardiac diseases,79363,75833,1.0465496551633193
+St. Gallen,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",28831,75833,0.38019068215684465
+St. Gallen,C,Geriatric Medicine,14232,75833,0.18767555022219878
+St. Gallen,D,Lung diseases,18816,75833,0.24812416757875858
+St. Gallen,E,Diseases of the abdominal organs,28010,75833,0.36936426094180635
+St. Gallen,F,Vascular Diseases,10980,75833,0.14479184523888017
+St. Gallen,G,Gynecology and obstetrics,45043,75833,0.5939762372581857
+St. Gallen,H,Diseases of the urinary tract and male genitalia,10687,75833,0.14092809199161316
+St. Gallen,I,"Diseases of the bones, joints, connective tissues",23721,75833,0.31280577057481573
+St. Gallen,J,Complex conditions,19770,75833,0.2607044426568908
+St. Gallen,K,Skin disorders,583,75833,0.007687945881080796
+St. Gallen,L,Highly specialized medicine,813,75833,0.010720926245829652
+St. Gallen,M,Palliative Medicine,3326,75833,0.043859533448498675
+Thurgau,A,Cardiac diseases,37906,21979,1.7246462532417308
+Thurgau,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",12127,21979,0.5517539469493608
+Thurgau,C,Geriatric Medicine,3314,21979,0.15078029027708267
+Thurgau,D,Lung diseases,14984,21979,0.681741662496019
+Thurgau,E,Diseases of the abdominal organs,16402,21979,0.746257791528277
+Thurgau,F,Vascular Diseases,5570,21979,0.2534237226443423
+Thurgau,G,Gynecology and obstetrics,56286,21979,2.5608990399927203
+Thurgau,H,Diseases of the urinary tract and male genitalia,11110,21979,0.5054825060284818
+Thurgau,I,"Diseases of the bones, joints, connective tissues",10923,21979,0.4969743846398835
+Thurgau,J,Complex conditions,8968,21979,0.40802584284999316
+Thurgau,K,Skin disorders,260,21979,0.011829473588425315
+Thurgau,M,Palliative Medicine,914,21979,0.04158514946084899
+Ticino,A,Cardiac diseases,78430,63185,1.2412756192134209
+Ticino,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",23682,63185,0.3748041465537707
+Ticino,C,Geriatric Medicine,10153,63185,0.1606868718841497
+Ticino,D,Lung diseases,39125,63185,0.6192134209068608
+Ticino,E,Diseases of the abdominal organs,20649,63185,0.32680224736883756
+Ticino,F,Vascular Diseases,7444,63185,0.11781277201867532
+Ticino,G,Gynecology and obstetrics,46477,63185,0.7355701511434676
+Ticino,H,Diseases of the urinary tract and male genitalia,16076,63185,0.254427474875366
+Ticino,I,"Diseases of the bones, joints, connective tissues",24069,63185,0.3809290179631242
+Ticino,J,Complex conditions,20002,63185,0.31656247527102954
+Ticino,K,Skin disorders,727,63185,0.011505895386563266
+Ticino,L,Highly specialized medicine,285,63185,0.0045105642161905515
+Ticino,M,Palliative Medicine,1753,63185,0.027743926564849253
+Uri,A,Cardiac diseases,3792,9401,0.40336134453781514
+Uri,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",1464,9401,0.1557281140304223
+Uri,C,Geriatric Medicine,347,9401,0.03691096691841293
+Uri,D,Lung diseases,2078,9401,0.22104031486012127
+Uri,E,Diseases of the abdominal organs,2069,9401,0.2200829698968195
+Uri,F,Vascular Diseases,165,9401,0.017551324327199233
+Uri,G,Gynecology and obstetrics,6495,9401,0.6908839485161153
+Uri,H,Diseases of the urinary tract and male genitalia,958,9401,0.10190405276034464
+Uri,I,"Diseases of the bones, joints, connective tissues",3981,9401,0.42346558876715246
+Uri,J,Complex conditions,1110,9401,0.11807254547388575
+Uri,K,Skin disorders,32,9401,0.0034038932028507603
+Valais,A,Cardiac diseases,47148,34708,1.3584188083438977
+Valais,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",17397,34708,0.5012389074564941
+Valais,C,Geriatric Medicine,7675,34708,0.22113057508355421
+Valais,D,Lung diseases,20724,34708,0.5970957704275671
+Valais,E,Diseases of the abdominal organs,7664,34708,0.22081364526910222
+Valais,F,Vascular Diseases,6938,34708,0.19989627751527025
+Valais,G,Gynecology and obstetrics,39036,34708,1.124697476086205
+Valais,H,Diseases of the urinary tract and male genitalia,7229,34708,0.20828051169759132
+Valais,I,"Diseases of the bones, joints, connective tissues",13306,34708,0.38336982828166416
+Valais,J,Complex conditions,11779,34708,0.3393742076754639
+Valais,K,Skin disorders,291,34708,0.00838423418232108
+Valais,L,Highly specialized medicine,2,34708,5.762360262763628e-05
+Valais,M,Palliative Medicine,1497,34708,0.04313126656678576
+Vaud,A,Cardiac diseases,82536,138905,0.5941902739282243
+Vaud,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",29756,138905,0.21421835067132214
+Vaud,C,Geriatric Medicine,6833,138905,0.04919189374032612
+Vaud,D,Lung diseases,28293,138905,0.20368597242719844
+Vaud,E,Diseases of the abdominal organs,15260,138905,0.10985925632626616
+Vaud,F,Vascular Diseases,15705,138905,0.11306288470537418
+Vaud,G,Gynecology and obstetrics,70942,138905,0.5107231561138907
+Vaud,H,Diseases of the urinary tract and male genitalia,7440,138905,0.0535617868327274
+Vaud,I,"Diseases of the bones, joints, connective tissues",19579,138905,0.14095244951585617
+Vaud,J,Complex conditions,36641,138905,0.2637846009862856
+Vaud,K,Skin disorders,1035,138905,0.007451135668262481
+Vaud,L,Highly specialized medicine,2196,138905,0.01580936611353083
+Vaud,M,Palliative Medicine,843,138905,0.006068896008063065
+Zug,A,Cardiac diseases,6229,30542,0.20394866086045446
+Zug,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",4268,30542,0.1397419946303451
+Zug,C,Geriatric Medicine,546,30542,0.017877021806037587
+Zug,D,Lung diseases,5837,30542,0.1911138759740685
+Zug,E,Diseases of the abdominal organs,7270,30542,0.23803287276537227
+Zug,F,Vascular Diseases,1355,30542,0.04436513653329841
+Zug,G,Gynecology and obstetrics,21211,30542,0.6944862811865627
+Zug,H,Diseases of the urinary tract and male genitalia,4557,30542,0.14920437430423678
+Zug,I,"Diseases of the bones, joints, connective tissues",8635,30542,0.28272542728046623
+Zug,J,Complex conditions,3350,30542,0.10968502390151268
+Zug,K,Skin disorders,67,30542,0.0021937004780302532
+Zug,M,Palliative Medicine,1,30542,3.274179817955602e-05
+Zürich,A,Cardiac diseases,119576,434008,0.2755156586975355
+Zürich,B,"Diseases of the nervous system, cerebrovascular accident (stroke)",33496,434008,0.07717830086081362
+Zürich,C,Geriatric Medicine,16730,434008,0.0385476765405246
+Zürich,D,Lung diseases,18051,434008,0.041591399236880426
+Zürich,E,Diseases of the abdominal organs,19022,434008,0.04382868518552653
+Zürich,F,Vascular Diseases,18360,434008,0.042303367679858435
+Zürich,G,Gynecology and obstetrics,71212,434008,0.164079924794013
+Zürich,H,Diseases of the urinary tract and male genitalia,10851,434008,0.025001843283994764
+Zürich,I,"Diseases of the bones, joints, connective tissues",28179,434008,0.06492737461060626
+Zürich,J,Complex conditions,37809,434008,0.08711590569759083
+Zürich,K,Skin disorders,3367,434008,0.007757921512967503
+Zürich,L,Highly specialized medicine,4184,434008,0.009640375292621335
+Zürich,M,Palliative Medicine,2486,434008,0.005728005013732466

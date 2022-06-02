@@ -1,12 +1,12 @@
 # Streamlit App 
 
-
+![alternative text](https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png)
 
 #### -- Project Status: [Completed]
+[Streamlit link](https://share.streamlit.io/ansamz/hospitals-and-diseases-in-switzerland/main/notebooks/AZ-streamlit.py)
 
 ## Project Intro/Objective
-The purpose of this project is to make a streamlit app and visualize our results after processing medical data in Switzerlan.
-I will add another repository with the code for analyzing the data.
+The purpose of this project is to make a streamlit app and visualize our results after processing medical data in Switzerland.
 
 
 ### Methods Used
@@ -18,27 +18,11 @@ I will add another repository with the code for analyzing the data.
 * Pandas, jupyter
 * HTML
 * plotly
+* geojson
 
 ## Project Description
 We downloaded the data from the swiss federal agency and analyzed the number of patients according to regions as well as medical staff and equipment.
-The main goal was to figure out if medical equipment and specialist were available and enough for each region. 
-
-## Getting Started
-
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-
-    *If using offline data mention that and how they may obtain the data from the froup)*
-
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages)
-create another "setup.md" file and link to it here*
-
-5. Follow setup [instructions](Link to file)
-
-
+The objective of this project was to create an application which can analyze patient distribution in specific cantons to help Swiss hospitals improve their treatment options. Moreover, we provide further information concerning the number of patients in various disease groups in these hospitals and the service they provide.
 
 ## Contributing Members
 

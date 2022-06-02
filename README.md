@@ -1,6 +1,6 @@
 # Streamlit App 
 
-![alternative text](https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png)
+![alternative text](https://images.ctfassets.net/23aumh6u8s0i/2Qhstbnq6i34wLoPoAjWoq/9f66f58a22870df0d72a3cbaf77ce5b6/streamlit_hero.jpg)
 
 #### -- Project Status: [Completed]
 [Streamlit link](https://share.streamlit.io/ansamz/hospitals-and-diseases-in-switzerland/main/notebooks/AZ-streamlit.py)
